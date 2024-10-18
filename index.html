@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="logo">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12.75c1.148 0 2.278.08 3.383.237 1.037.146 1.866.966 1.866 2.013 0 3.728-2.35 6.75-5.25 6.75S6.75 18.728 6.75 15c0-1.046.83-1.867 1.866-2.013A24.204 24.204 0 0 1 12 12.75Zm0 0c2.883 0 5.647.508 8.207 1.44a23.91 23.91 0 0 1-1.152 6.06M12 12.75c-2.883 0-5.647.508-8.208 1.44.125 2.104.52 4.136 1.153 6.06M12 12.75a2.25 2.25 0 0 0 2.248-2.354M12 12.75a2.25 2.25 0 0 1-2.248-2.354M12 8.25c.995 0 1.971-.08 2.922-.236.403-.066.74-.358.795-.762a3.778 3.778 0 0 0-.399-2.25M12 8.25c-.995 0-1.97-.08-2.922-.236-.402-.066-.74-.358-.795-.762a3.734 3.734 0 0 1 .4-2.253M12 8.25a2.25 2.25 0 0 0-2.248 2.146M12 8.25a2.25 2.25 0 0 1 2.248 2.146M8.683 5a6.032 6.032 0 0 1-1.155-1.002c.07-.63.27-1.222.574-1.747m.581 2.749A3.75 3.75 0 0 1 15.318 5m0 0c.427-.283.815-.62 1.155-.999a4.471 4.471 0 0 0-.575-1.752M4.921 6a24.048 24.048 0 0 0-.392 3.314c1.668.546 3.416.914 5.223 1.082M19.08 6c.205 1.08.337 2.187.392 3.314a23.882 23.882 0 0 1-5.223 1.082" />
+          </svg>
+          <h1>Quiz</h1>
+          <nav>
+            <ul>
+                <li><a href="#info" accesskey="i">INFO</a></li>
+                <li><a href="#question-html" accesskey="h">HTML</a></li>
+                <li><a href="#question-css" accesskey="c">CSS</a></li>
+            </ul>
+          </nav>
+        </header>
+          <main>
+            <form action="">
+                <section id="info">
+                    <h2>Informacion del >Estudiante</h2>
+                    <div class="info">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="info">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="info">
+                        <label for="birth">Fecha de Nacimiento:</label>
+                        <input type="date" name="birth">
+                    </div>
+                </section>
+                <section id="question-html">
+                    <h2>HTML</h2>
+                    <div class="question-block">
+                        <h3>Pregunta 1</h3>
+                        <fieldset class="question">
+                            <lagend>¿Los elementos input deben de ir dentro de un form?</lagend>
+                            <ul class="answers-list">
+                                <li>
+                                    <label for="q1-a1">
+                                        <input type="radio" name="q1-a1" value="true">
+                                        verdadero
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q1-a2">
+                                        <input type="radio" name="q1-a2" value="false">
+                                        falso
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="question-block">
+                        <h3>Pregunta 2</h3>
+                        <fieldset class="question">
+                            <lagend>¿Un elemnto nav es utilizado para barra de navegacion?</lagend>
+                            <ul class="answers-list">
+                                <li>
+                                    <label for="q2-a1">
+                                        <input type="radio" name="q2-a1" value="true">
+                                        verdadero
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q2-a2">
+                                        <input type="radio" name="q2-a2" value="false">
+                                        falso
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </section>
+                <section id="question-css">
+                    <h2>CSS</h2>
+                    <div class="form-row">
+                        <div class="question-block">
+                            <label for="selector">
+                                ¿Se puede utilizar CSS en el archivo HTML?
+                            </label>
+                        </div>
+                            <div class="answer">
+                                <select name="selector" id="selector" required>
+                                    <option value="">Selecciona una opcion</option>
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="question-block">
+                                <label for="txt-area">Preguntas o comentarios</label>
+                            </div>
+                            <div class="answer">
+                                <textarea name="txt-area" rows="5" cols="24"></textarea>  
+                            </div>
+                       </div>
+                 </section>
+                 <button type="submit">Enviar</button>
+             </form>
+           </main>
+           <footer>
+              <address>
+                <a href="https://www.google.com">Mi pagina</a><br/>
+                Mazatlan<br/>
+                Sinaloa<br/>
+                Mexico
+              </address>
+           </footer>
+</body>
+</html>
